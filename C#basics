@@ -1,0 +1,49 @@
+using System;
+
+
+namespace csharpBasics
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           // int a, b;
+            //a = 10;
+            //b = 20;
+            Console.Write("Type your age : ");
+            int d =  Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("your age is :" + d);
+
+
+
+            //string c = "43";
+            //Console.WriteLine(c+d);
+            //Console.WriteLine(a+b);
+           
+            Console.ReadLine();
+            
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+    }
+}
