@@ -1,0 +1,31 @@
+using System;
+
+
+namespace csharpBasics
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("type your first name ");
+            string a = Console.ReadLine();
+            Console.WriteLine("type your second name ");
+            string b = Console.ReadLine();
+            Console.WriteLine("type your last  name ");
+            string c = Console.ReadLine();
+            Console.WriteLine("type your age name ");
+
+            int d = Convert.ToInt32(Console.ReadLine());
+            Console.Write("your name is {0} {1} {2} your age is {3} ", a,b,c,d );
+            
+            Console.ReadLine();
+
+
+
+
+
+
+
+        }
+    }
+}
