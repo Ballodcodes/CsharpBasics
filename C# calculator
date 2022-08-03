@@ -1,0 +1,112 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace csharplec1
+{
+    class Program
+    {
+        
+        static void addition()
+        {
+            Console.WriteLine("write first number :");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("write second number :");
+            int b= Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(a + b);
+            Console.ReadLine();
+
+        }
+        static void sub()
+        {
+            Console.WriteLine("write first number :");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("write second number :");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(a - b);
+            Console.ReadLine();
+
+        }
+        static void mul()
+        {
+            Console.WriteLine("write first number :");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("write second number :");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(a * b);
+            Console.ReadLine();
+        }
+        static void div()
+        {
+            Console.WriteLine("write first number :");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("write second number :");
+            int b = Convert.ToInt32(Console.ReadLine());
+            if (b==0)
+            {
+                Console.WriteLine("Can't divide by zero");
+            }
+
+
+            Console.WriteLine(a / b); 
+            Console.ReadLine();
+
+        }
+
+        static void Main(string[] args)
+        {
+            int choice;
+            do
+            {
+                Console.WriteLine("1 for Addition");
+                Console.WriteLine("2 for sub");
+                Console.WriteLine("3 for mul");
+                Console.WriteLine("4 for div");
+
+                Console.Write("enter your choice :");
+                choice = Convert.ToInt32(Console.ReadLine());
+
+                switch (choice)
+                {
+                    case 1:
+                        addition();
+                        break;
+                    case 2:
+                        sub();
+                        break;
+                    case 3:
+                        mul();
+                        break;
+                    case 4:
+                        div();
+                        break;
+                    default:
+                        Console.WriteLine("Wrong choice");
+                        break;
+
+                        Console.ReadLine();
+
+
+
+
+
+                }
+
+
+
+
+            } while (choice != 4);
+
+        }
+        
+    }
+}
